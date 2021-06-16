@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --primary-font-family: "Libre Baskerville", serif;
+  --secondary-font-family: "Open Sans", sans-serif;
+  --font-small: 1rem;
+  --font-medium: 1.25rem;
+  --font-large: 2.063rem;
+  --background-color: rgb(255, 255, 255);
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgba(28, 28, 28, 0.5);
+  --heading-font: bold var(--font-large) "Libre Baskerville", serif;
+  --subheading-font: var(--font-medium) "Open Sans", sans-serif;
+  --content-font: var(--font-small) "Open Sans", sans-serif;
+}
+.heading {
+  font: var(--heading-font);
+  width: 100%;
+}
+.subheading {
+  font: var(--subheading-font);
+  width: 100%;
+}
+.content {
+  font: var(--content-font);
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+h3 {
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 16px;
+  /* margin: auto; */
+}
+p {
+  font-size: var(--font-medium);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 5px;
+}
+
+label {
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+
+/* a,
+a:hover,
+a:focus,
+a:active {
+  font-weight: 500;
+  text-decoration: none;
+  font-family: var(--secondary-font-family);
+} */
+/* 
+a {
+  color: #40335e;
+} */
+.txtdec {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+hr {
+  background: #afacad;
+  margin: 4px 0;
+}
+
+body {
+  padding: 10px;
+}
+
+.navbar {
+  position: sticky;
+  /* position: fixed; */
+  top: 0px;
+  left: 0;
+  background: var(--background-color);
+  /* background: transparent; */
+  width: 100%;
+  padding-top: 0px;
+  z-index: 10;
+}
+.navbar-brand {
+  font-style: normal;
+  font-family: var(--primary-font-family);
+  font-size: 30px;
+}
+.nav-item {
+  font: var(--subheading-font);
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+}
+navbar > .btn {
+  width: 8%;
+}
+.hero {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin-top: 1%;
+}
+.hero .hero_img {
+  width: 100%;
+  height: 100%;
+  background: url(https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .text {
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  background: var(--background-color);
+  top: 0;
+  left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  flex-direction: column;
+}
+.editor_choice {
+  /* height: 100vh; */
+  width: 100%;
+  padding: 2% 25%;
+}
+.header-text {
+  margin-bottom: 5%;
+  text-align: center;
+  font: var(--heading-font);
+}
+.edchoice_img {
+  width: -webkit-fill-available;
+  margin-right: 5%;
+}
+
+.news_blog {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  /* margin-top: 10%; */
+}
+.news_blog .news_img {
+  width: 100%;
+  height: 100%;
+  background: url(https://images.pexels.com/photos/6619243/pexels-photo-6619243.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2500);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news_blog .text {
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  background: var(--background-color);
+  top: 6%;
+  right: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  flex-direction: column;
+}
+
+.extra {
+  height: 100vh;
+  width: 70%;
+  margin-top: 2rem;
+}
+.hovereffect:hover {
+  background: #afacad33;
+  transition: all 0.1s;
+}
+.card-body {
+  padding: 1rem;
+}
+.extimg_box{
+  width: 30%;
+}
+.extra_img {
+  height: 100%;
+  width: 100%;
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .heading {
+    font-size: 20px;
+  }
+  .subheading {
+    font-size: 12px;
+  }
+  .content {
+    font-size: 10px;
+  }
+  .loginbtn {
+    padding: 0.275rem 0.75rem;
+    font-size: 0.851rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .navbar-toggler-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: baseline;
+  }
+  .hero {
+    height: 80vh;
+    margin-top: 4%;
+  }
+  .hero .text {
+    bottom: 1%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: var(--background-color);
+    top: auto;
+  }
+  .header-text {
+    font-size: 1.5rem;
+    margin: 1.15rem 0;
+  }
+  .editor_choice {
+    padding: 2% 0% 10% 0%;
+  }
+  .list-group-item {
+    padding: 0.5rem 0rem;
+  }
+  .news_blog {
+    height: 50vh;
+  }
+  .news_blog .text {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    justify-content: flex-start;
+  }
+  .extra{
+    width: 100%;
+  }
+  .extimg_box{
+    width: 100%;
+  }
+  .card-body {
+    padding: 0.5rem;
+}
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
